@@ -1,12 +1,12 @@
 import { Artwork } from '@/components/artwork'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { questions } from '@/content'
-import sectionBackground from '@/assets/section-background.png'
-import faqPlus from '@/assets/faq-plus.png'
-import testimonialBackground from '@/assets/testimonial-background.png'
-import sophiaChen from '@/assets/sophia-chen.png'
-import alexMorgan from '@/assets/alex-morgan.png'
-import danielKim from '@/assets/daniel-kim.png'
+import sectionBackground from '@/assets/section-background.webp'
+import faqPlus from '@/assets/faq-plus.webp'
+import testimonialBackground from '@/assets/testimonial-background.webp'
+import sophiaChen from '@/assets/sophia-chen.webp'
+import alexMorgan from '@/assets/alex-morgan.webp'
+import danielKim from '@/assets/daniel-kim.webp'
 
 const testimonials = [
   { id: 'sophia', name: 'Sophia Chen', role: 'Head of Product', photo: sophiaChen, quote: '“AI helps our team work better and focus on what matters.”' },

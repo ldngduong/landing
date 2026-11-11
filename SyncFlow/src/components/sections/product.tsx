@@ -1,12 +1,12 @@
 import type { MouseEventHandler } from 'react'
 import { Artwork } from '@/components/artwork'
 import { Button } from '@/components/ui/button'
-import featureWorkflow from '@/assets/feature-workflow.png'
-import featureSync from '@/assets/feature-sync.png'
-import featureEncryption from '@/assets/feature-encryption.png'
-import featureIntegrations from '@/assets/feature-integrations.png'
-import sectionBackground from '@/assets/section-background.png'
-import workflowDevices from '@/assets/workflow-devices.png'
+import featureWorkflow from '@/assets/feature-workflow.webp'
+import featureSync from '@/assets/feature-sync.webp'
+import featureEncryption from '@/assets/feature-encryption.webp'
+import featureIntegrations from '@/assets/feature-integrations.webp'
+import sectionBackground from '@/assets/section-background.webp'
+import workflowDevices from '@/assets/workflow-devices.webp'
 
 const features = [
   { id: 'workflow', image: featureWorkflow, title: 'AI Workflow Automations', description: 'Automate repetitive tasks with intelligent AI.' },

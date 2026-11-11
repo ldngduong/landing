@@ -1,8 +1,8 @@
 import { Brand } from '@/components/brand'
 import { navigation } from '@/content'
-import linkedin from '@/assets/linkedin.png'
-import github from '@/assets/github.png'
-import socialX from '@/assets/x.png'
+import linkedin from '@/assets/linkedin.webp'
+import github from '@/assets/github.webp'
+import socialX from '@/assets/x.webp'
 
 const socials = [
   { label: 'LinkedIn', src: linkedin },

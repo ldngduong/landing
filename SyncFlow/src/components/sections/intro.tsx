@@ -1,13 +1,13 @@
 import { Brand } from '@/components/brand'
 import { Button } from '@/components/ui/button'
 import { navigation, type ActionHandler } from '@/content'
-import heroBackground from '@/assets/hero-background.png'
-import workflowBuilder from '@/assets/workflow-builder.png'
-import vercel from '@/assets/vercel.png'
-import stripe from '@/assets/stripe.png'
-import figma from '@/assets/figma.png'
-import openai from '@/assets/openai.png'
-import jira from '@/assets/jira.png'
+import heroBackground from '@/assets/hero-background.webp'
+import workflowBuilder from '@/assets/workflow-builder.webp'
+import vercel from '@/assets/vercel.webp'
+import stripe from '@/assets/stripe.webp'
+import figma from '@/assets/figma.webp'
+import openai from '@/assets/openai.webp'
+import jira from '@/assets/jira.webp'
 
 const logos = [
   { name: 'Vercel', src: vercel, width: 135 },

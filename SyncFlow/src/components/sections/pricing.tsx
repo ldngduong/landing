@@ -1,8 +1,8 @@
 import { Artwork } from '@/components/artwork'
 import { Button } from '@/components/ui/button'
 import { plans, type ActionHandler } from '@/content'
-import pricingBackground from '@/assets/pricing-background.png'
-import pricingPro from '@/assets/pricing-pro.png'
+import pricingBackground from '@/assets/pricing-background.webp'
+import pricingPro from '@/assets/pricing-pro.webp'
 
 export function Pricing({ onRequest }: { onRequest: ActionHandler }) {
   return (
