@@ -1,0 +1,57 @@
+# Dependencies and package manager caches
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+
+# Build output, framework caches, and test reports
+dist/
+dist-ssr/
+build/
+.next/
+out/
+.output/
+.nuxt/
+.svelte-kit/
+.astro/
+.vite/
+.turbo/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Local environment, credentials, and hosting state
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.envrc
+.dev.vars
+.dev.vars.*
+*.local
+*.pem
+*.key
+*.p12
+*.pfx
+.vercel/
+.netlify/
+.wrangler/
+
+# Logs and machine-specific files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.idea/
+**/.vscode/*
+!**/.vscode/extensions.json
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
