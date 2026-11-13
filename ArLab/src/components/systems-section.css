@@ -1,0 +1,120 @@
+.systems-section {
+  padding-block-end: clamp(64px, 8vw, 112px);
+  color: white;
+  scroll-margin-top: 20px;
+}
+
+.systems-section h2 {
+  width: min(calc(100% - clamp(32px, 10vw, 144px)), 1240px);
+  margin: 0 auto clamp(22px, 3vw, 38px);
+  font-size: clamp(1.8rem, 4vw, 3.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.systems-marquee {
+  overflow: hidden;
+  padding-block: 6px;
+  mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+}
+
+.systems-track {
+  display: flex;
+  width: max-content;
+  animation: systems-scroll 34s linear infinite;
+}
+
+.systems-marquee:hover .systems-track {
+  animation-play-state: paused;
+}
+
+.systems-list {
+  display: flex;
+  min-width: 100vw;
+  flex: none;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: clamp(14px, 2.4vw, 36px);
+  padding-inline: clamp(7px, 1.2vw, 18px);
+}
+
+@keyframes systems-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.system-item {
+  display: flex;
+  width: clamp(96px, 10vw, 142px);
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.system-logos {
+  display: flex;
+  width: 100%;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.system-logos img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(100%, 112px);
+  max-height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.system-logos:has(img:nth-child(2)) img {
+  max-width: min(46%, 60px);
+}
+
+.system-logos[data-ink="light"] img {
+  filter: grayscale(1) contrast(5);
+  mix-blend-mode: screen;
+}
+
+.system-logos[data-ink="dark"] img {
+  filter: grayscale(1) invert(1) contrast(5);
+  mix-blend-mode: screen;
+}
+
+.system-item span {
+  font-size: 0.625rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .systems-marquee {
+    mask-image: none;
+  }
+
+  .systems-track {
+    width: 100%;
+    animation: none;
+  }
+
+  .systems-list {
+    width: min(calc(100% - 32px), 1240px);
+    min-width: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-inline: auto;
+  }
+
+  .systems-list[aria-hidden="true"] {
+    display: none;
+  }
+}
